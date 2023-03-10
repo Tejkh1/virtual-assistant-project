@@ -143,7 +143,15 @@ int main()
                     system(charCommand);
                     system("start https://www.google.com");
                 }
-              
+             
+                else if(strcmp(ch, "open youtube") == 0){
+                    cout<<"openining YouTube....."<<endl;
+                    string phrase = "opening youtube";
+                    string command = "espeak \"" + phrase + "\"";
+                    const char *charCommand = command.c_str();
+                    system(charCommand);
+                    system("start https://www.youtube.com");
+                }
 
                 else{
                     cout<<"Sorry could not understand your query please ty again !!!"<<endl;
